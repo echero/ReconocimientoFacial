@@ -13,11 +13,11 @@ function startVideo() {
 }
 
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-    faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-    faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-    faceapi.nets.faceExpressionNet.loadFromUri('/models'),
-    faceapi.nets.ageGenderNet.loadFromUri('/models')
+    faceapi.nets.tinyFaceDetector.loadFromUri('ReconocimientoFacial/models'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('ReconocimientoFacial/models'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('ReconocimientoFacial/models'),
+    faceapi.nets.faceExpressionNet.loadFromUri('ReconocimientoFacial/models'),
+    faceapi.nets.ageGenderNet.loadFromUri('ReconocimientoFacial/models')
 ]).then(startVideo)
 
 video.addEventListener('play', () =>{
